@@ -22,6 +22,7 @@ h3{
     color: aliceblue;
     font-size: 40px;
   margin-bottom: 16px;
+  margin-left: 20px;
 }
 .liste{
     padding: 10px;
@@ -31,7 +32,7 @@ h3{
 }
 
 .dolist{
-width: 90%;
+width: 50%;
 margin: 0 auto;
 height: 450px;
 background-color: rgb(1, 92, 1);
@@ -54,9 +55,9 @@ color: white;
     display: flex;
     margin: 10px;
     border-radius: 10px;
- 
     border: 1px solid orange;
     padding: 5px;
+    width: 90%;
   
 }
 
