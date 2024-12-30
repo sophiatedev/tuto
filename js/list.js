@@ -2,8 +2,8 @@
  let btn = document.getElementById('btn');
  let liste = document.querySelector('.liste');
  let error = document.querySelector('.error')
- btn.addEventListener('click',function (e) {
-    e.preventDefault();
+ btn.addEventListener('click',function () {
+   
     if (entrenom.value.trim()=== '') {
     error.textContent ='veilleur remplir le champ';
         
@@ -64,7 +64,7 @@ span.classList='modifier';
     if(checkbox.checked){
        divs.style.border = "1px solid green";
        divs.style.backgroundColor = " rgb(178, 250, 178)";
-      
+     
      
         
      }else{
