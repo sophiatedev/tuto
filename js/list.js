@@ -1,4 +1,4 @@
-let entrenom = document.getElementById('entrenom');
+ let entrenom = document.getElementById('entrenom');
  let btn = document.getElementById('btn');
  let liste = document.querySelector('.liste');
  let error = document.querySelector('.error')
@@ -46,12 +46,16 @@ span.classList='modifier';
  
  
  span.addEventListener('click',function () {
- let ajouter = prompt('modifier la tache: ')
+   entrenom.value = li.textContent.trim();
+   liste.removeChild(divs);
  if (ajouter!== null && ajouter.trim()!== '') {
+
     li.textContent = ajouter.trim();
     divs.appendChild(checkbox);
+    divs.appendChild(li);
     divs.appendChild(span);
     divs.appendChild(spans);
+    liste.appendChild(divs);
  
  } 
  });
@@ -71,9 +75,13 @@ span.classList='modifier';
      }
     
  })
+ 
+
  entrenom.value='';
 error.textContent = '';
     }
  
- })
+
  
+    
+ })
